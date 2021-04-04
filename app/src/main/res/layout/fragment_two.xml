@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg1">
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Best for Tourism"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Book now..!!"
+        android:textColor="#EFA8C0"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="380dp"
+        android:layout_height="615dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bg7"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="-271dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/berkshire_swash"
+                android:padding="10dp"
+                android:text="Select Trip :-"
+                android:textColor="#ED1F65"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.824"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp">
+
+                    <RadioGroup
+                        android:id="@+id/drink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/road"
+                            android:layout_width="155dp"
+                            android:layout_height="match_parent"
+                            android:buttonTint="#ED1F65"
+                            android:text="Road way"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <RadioButton
+                            android:id="@+id/air"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:buttonTint="#ED1F65"
+                            android:text="Airway"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/berkshire_swash"
+                android:padding="10dp"
+                android:text="Facilities :-"
+                android:textColor="#ED1F65"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.824"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp">
+
+                    <CheckBox
+                        android:id="@+id/meal"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#ED1F65"
+                        android:text="Meal"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/accommodation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#ED1F65"
+                        android:text="Accommodation"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp">
+
+                    <CheckBox
+                        android:id="@+id/volvo"
+                        android:layout_width="159dp"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#ED1F65"
+                        android:text="Volvo"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/sightseeing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#ED1F65"
+                        android:text="Sightseeing"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="fill_vertical"
+                        android:padding="10dp"
+                        android:text="Select Location :-"
+                        android:textColor="#ED1F65"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintHorizontal_bias="0.824"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/location"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:entries="@array/location" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/berkshire_swash"
+                        android:gravity="fill_vertical"
+                        android:padding="10dp"
+                        android:text="Member :-"
+                        android:textColor="#ED1F65"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintHorizontal_bias="0.824"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/quantity"
+                        android:layout_width="131dp"
+                        android:layout_height="match_parent"
+                        android:entries="@array/quantity" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="167dp"
+                        android:layout_height="59dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="#EC3673"
+                        android:text="Submit"
+                        android:textSize="20dp" />
+
+
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
